@@ -34,7 +34,7 @@ while pin == password:
         print("Please enter valid option")
 
     if option == 1:
-        print("Your current balance is 500000")
+        print("Your current balance is ",balance)
 
         print("=====================================================")
         print("=====================================================")
@@ -44,28 +44,25 @@ while pin == password:
 
     if option == 2:
         withdraw_ammount = int(input("Please enter withdraw amount"))
-
         balance -= withdraw_ammount
-
         print("withdarw amount is debited from you account")
-
-        print("Your current balance is:")
+        print("Your current balance is:",balance)
 
         print("=====================================================")
         print("=====================================================")
 
     if option == 3:
         deposit_ammount = int(input("Please enter deposit_amount"))
-        balance += deposit_ammount
-        print("\n Amount Deposited:", deposit_ammount)
+        balance +=  deposit_ammount
+        print("\n Amount Deposited:",balance)
 
 
-        print("{deposit_ammount} is credited yo tour account")
+        print(deposit_ammount," is credited yo tour account")
 
         print("=====================================================")
         print("=====================================================")
 
-        print("Your current balance is {balance}")
+        print("Your current balance is ",balance)
 
         print("=====================================================")
         print("=====================================================")
